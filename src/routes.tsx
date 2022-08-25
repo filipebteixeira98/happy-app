@@ -17,10 +17,20 @@ export default function Routes() {
       <Navigator
         screenOptions={{
           headerShown: false,
+          cardStyle: {
+            backgroundColor: '#f2f3f5',
+          },
         }}
       >
         <Screen name="OrphanagesMap" component={OrphanagesMap} />
-        <Screen name="OrphanageDetails" component={OrphanageDetails} />
+        <Screen
+          name="OrphanageDetails"
+          component={OrphanageDetails}
+          options={{
+            headerShown: true,
+            header: () => <Header title="Orphanage" />,
+          }}
+        />
         <Screen name="SelectMapPosition" component={SelectMapPosition} />
         <Screen name="OrphanageData" component={OrphanageData} />
       </Navigator>

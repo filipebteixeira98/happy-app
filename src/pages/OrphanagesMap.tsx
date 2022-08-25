@@ -12,11 +12,11 @@ export default function OrphanagesMap() {
   const navigation = useNavigation();
 
   function handleNavigateToOrphanageDetails() {
-    navigation.navigate('OrphanageDetails' as never);
+    navigation.navigate('OrphanageDetails');
   }
 
   function handleNavigateToCreateOrphanage() {
-    navigation.navigate('SelectMapPosition' as never);
+    navigation.navigate('SelectMapPosition');
   }
 
   return (
